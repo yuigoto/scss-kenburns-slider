@@ -1,0 +1,14 @@
+{
+  "verbose": true, 
+  "watch": [
+    "assets",
+    "src",  
+    "static"
+  ], 
+  "ignore": [
+    "node_modules",  
+    "build"
+  ], 
+  "ext": "*", 
+  "exec": "node"
+}

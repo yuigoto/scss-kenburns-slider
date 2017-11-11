@@ -1,0 +1,32 @@
+{
+  "name": "yx-scss-kenburns-slider",
+  "version": "0.0.1",
+  "description": "A simple, no-JS, Ken Burns-style slider using CSS animations, based on a pen by Nicola Pressi",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuigoto/yx-scss-kenburns-slider.git"
+  },
+  "keywords": [
+    "scss",
+    "css",
+    "html"
+  ],
+  "author": "Fabio Y. Goto <lab@yuiti.com.br>",
+  "license": "ISC",
+  "homepage": "https://github.com/yuigoto/yx-scss-kenburns-slider.git#readme",
+  "dependencies": {
+    "async": "^2.6.0",
+    "copy": "^0.3.1",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.6.0",
+    "nodemon": "^1.12.1",
+    "rimraf": "^2.6.2"
+  }
+}

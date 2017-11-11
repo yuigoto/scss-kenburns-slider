@@ -1,0 +1,29 @@
+/**
+ * KEN BURNS SLIDER : Variables
+ * ======================================================================
+ * Slider builder variables.
+ * ----------------------------------------------------------------------
+ * @author      Fabio Y. Goto <lab@yuiti.com.br>
+ * @version     0.0.1
+ */
+
+// Animation name
+$kb-name: "kenburns" !default;
+
+// Number of slides in the slideshow
+$kb-items: 6 !default;
+
+// Slide animation time
+$kb-animation-time: 5s !default;
+
+// Slide transition time
+$kb-transition-time: 1s !default;
+
+// Scaling factor
+$kb-scale: 20% !default;
+
+// Slideshow completion time
+$kb-total-time: ($kb-animation-time * $kb-items) !default;
+
+// Transform scale base
+$kb-scale-base: (1 + $kb-scale / 100%) !default;

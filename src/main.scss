@@ -1,0 +1,57 @@
+/**
+ * KEN BURNS SLIDER : Main SCSS
+ * ======================================================================
+ * A No-JS Ken Burns-style slideshow, based on a pen by Nicola Pressi.
+ * ----------------------------------------------------------------------
+ * @author      Fabio Y. Goto <lab@yuiti.com.br>
+ * @version     0.0.1
+ */
+
+// Load variables and mixins
+@import "kenburns";
+
+* {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+// Text wrapper
+.kb-text {
+    box-sizing: border-box;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAKUlEQVQYV2NkYGCYycDAsIWBgcEHRDMyMDCkMTAwSDEwMDwD0SAB/CoABmMHn2fha4AAAAAASUVORK5CYII=");
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    & > div {
+        background: rgba(255, 255, 255, .80);
+        text-align: center;
+        margin: auto;
+        padding: 2rem;
+        display: block;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, .80), 
+                    0 0 0 4px rgba(255, 255, 255, .80), 
+                    0 0 0 5px rgba(0, 0, 0, .80),
+                    0 0 0 8px rgba(255, 255, 255, .80);
+    }
+}
+
+// Build the slideshow wrapper
+.kb-slider {
+    @include kb_slide_wrapper();
+}
+
+.kb-card {
+    @include kb_slide_children();
+}
+
+// Define keyframes
+@include kb_slide_keyframe();
